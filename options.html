@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>設定</title>
+</head>
+<body>
+  <main>
+    <h1>option</h1>
+
+    <div class="setting">
+      <form  name="setting-form" action="options.html" method="get">
+        <p>
+          ブロック時間：<select id="select-hour"></select> 時間　<select id="select-minutes"></select> 分
+        </p>
+        <p>
+          ブロックするサイトの追加: <input type="text" id="new-block-site" size="60">
+        </p>
+        <button type="submit" id="save">保存</button>
+      </form>
+    </div>
+    
+    
+    
+    <div class="blocked-lists">
+      <h2>ブロックリスト</h2>
+      <form name="blocked-lists-form" action="options.html" method="get" id="blocked-list">
+        <button type="submit" id="remove">削除</button>
+      </form>
+    </div>
+    
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>
